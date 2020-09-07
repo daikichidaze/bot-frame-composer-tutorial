@@ -1,3 +1,8 @@
+This projecct is a Tutorial of Bot Framework Composer.
+https://docs.microsoft.com/ja-jp/composer/tutorial/tutorial-introduction
+
+---
+
 This folder contains a Bot Project created with Bot Framework Composer.
 
 The full documentation for Composer lives here:
