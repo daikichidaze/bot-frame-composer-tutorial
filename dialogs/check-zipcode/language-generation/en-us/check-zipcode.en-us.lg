@@ -1,0 +1,4 @@
+[import](common.lg)
+
+# SendActivity_poHI0K()
+- current zipcode propaty : ${user.zipcode}

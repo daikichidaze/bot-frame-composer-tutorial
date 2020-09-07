@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "Hbw3yE",
+    "name": "check-zipcode",
+    "description": "check the current zip code"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "uhiIuR"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "poHI0K"
+          },
+          "activity": "${SendActivity_poHI0K()}"
+        }
+      ]
+    }
+  ],
+  "generator": "check-zipcode.lg",
+  "recognizer": "check-zipcode.lu.qna",
+  "id": "check-zipcode"
+}

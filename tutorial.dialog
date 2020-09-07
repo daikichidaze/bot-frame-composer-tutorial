@@ -64,6 +64,60 @@
           "dialog": "getWeather"
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "iCu6zs",
+        "name": "help"
+      },
+      "intent": "help",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "z8mF8F"
+          },
+          "activityProcessed": true,
+          "dialog": "help"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "6u1n0P",
+        "name": "cancel"
+      },
+      "intent": "cancel",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "DZa4IT"
+          },
+          "activityProcessed": true,
+          "dialog": "cancel"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "ssxy3s",
+        "name": "check"
+      },
+      "intent": "check",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "0rwtAu"
+          },
+          "activityProcessed": true,
+          "dialog": "check-zipcode"
+        }
+      ]
     }
   ],
   "$schema": "https://raw.githubusercontent.com/microsoft/BotFramework-Composer/stable/Composer/packages/server/schemas/sdk.schema",
@@ -75,6 +129,18 @@
       {
         "intent": "weather",
         "pattern": "weather"
+      },
+      {
+        "intent": "help",
+        "pattern": "help"
+      },
+      {
+        "intent": "cancel",
+        "pattern": "cancel"
+      },
+      {
+        "intent": "check",
+        "pattern": "check"
       }
     ]
   }

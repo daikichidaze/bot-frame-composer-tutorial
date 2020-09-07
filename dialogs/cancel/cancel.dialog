@@ -1,0 +1,39 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "Jxv9bN",
+    "name": "cancel",
+    "description": "global cancel"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "Wnvple"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "NpkZHk"
+          },
+          "activity": "${SendActivity_NpkZHk()}"
+        },
+        {
+          "$kind": "Microsoft.CancelAllDialogs",
+          "$designer": {
+            "id": "2mOPc2"
+          },
+          "activityProcessed": true
+        }
+      ]
+    }
+  ],
+  "generator": "cancel.lg",
+  "recognizer": "cancel.lu.qna",
+  "id": "cancel"
+}

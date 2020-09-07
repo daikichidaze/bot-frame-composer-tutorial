@@ -24,6 +24,13 @@
           "activity": "${SendActivity_1tQujq()}"
         },
         {
+          "$kind": "Microsoft.DeleteProperty",
+          "$designer": {
+            "id": "X3V5U8"
+          },
+          "property": "user.zipcode"
+        },
+        {
           "$kind": "Microsoft.TextInput",
           "$designer": {
             "id": "KiBB9P"
@@ -31,7 +38,7 @@
           "disabled": false,
           "maxTurnCount": 3,
           "alwaysPrompt": false,
-          "allowInterruptions": false,
+          "allowInterruptions": true,
           "prompt": "${TextInput_Prompt_KiBB9P()}",
           "unrecognizedPrompt": "${TextInput_UnrecognizedPrompt_KiBB9P()}",
           "invalidPrompt": "${TextInput_InvalidPrompt_KiBB9P()}",
