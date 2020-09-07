@@ -13,7 +13,8 @@
     {
       "$kind": "Microsoft.OnConversationUpdateActivity",
       "$designer": {
-        "id": "376720"
+        "id": "376720",
+        "name": "WelcomeTheUser"
       },
       "actions": [
         {
@@ -45,10 +46,36 @@
           ]
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "rnjN51",
+        "name": "weather"
+      },
+      "intent": "weather",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "HiO5uZ"
+          },
+          "activityProcessed": true,
+          "dialog": "getWeather"
+        }
+      ]
     }
   ],
   "$schema": "https://raw.githubusercontent.com/microsoft/BotFramework-Composer/stable/Composer/packages/server/schemas/sdk.schema",
   "generator": "tutorial.lg",
   "id": "Tutorial",
-  "recognizer": "tutorial.lu.qna"
+  "recognizer": {
+    "$kind": "Microsoft.RegexRecognizer",
+    "intents": [
+      {
+        "intent": "weather",
+        "pattern": "weather"
+      }
+    ]
+  }
 }

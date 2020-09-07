@@ -1,0 +1,14 @@
+[import](common.lg)
+
+# SendActivity_1tQujq()
+- Let's check the weather
+# TextInput_Prompt_KiBB9P()
+- What is your zipcode?
+# TextInput_UnrecognizedPrompt_KiBB9P()
+- Sorry, I do not understand '${this.value}'. Please specify a zip code in the form 12345
+# TextInput_InvalidPrompt_KiBB9P()
+- Sorry, '${this.value}' is not valid. I'm looking for a 5 digit number as zip code. Please specify a zip code in the form 12345
+# SendActivity_0so4N9()
+- The weather is ${dialog.weather.weather} and the temp is ${dialog.weather.temp}&deg;
+# SendActivity_BqPa3r()
+- I got an error: ${dialog.api_response.content.message}
