@@ -88,7 +88,8 @@
           "activityProcessed": true,
           "dialog": "help"
         }
-      ]
+      ],
+      "condition": "#Help.Score >= 0.5"
     },
     {
       "$kind": "Microsoft.OnIntent",
@@ -106,7 +107,8 @@
           "activityProcessed": true,
           "dialog": "cancel"
         }
-      ]
+      ],
+      "condition": "#Cancel.Score >= 0.8"
     },
     {
       "$kind": "Microsoft.OnIntent",
@@ -130,25 +132,5 @@
   "$schema": "https://raw.githubusercontent.com/microsoft/BotFramework-Composer/stable/Composer/packages/server/schemas/sdk.schema",
   "generator": "tutorial.lg",
   "id": "Tutorial",
-  "recognizer": {
-    "$kind": "Microsoft.RegexRecognizer",
-    "intents": [
-      {
-        "intent": "weather",
-        "pattern": "weather"
-      },
-      {
-        "intent": "help",
-        "pattern": "help"
-      },
-      {
-        "intent": "cancel",
-        "pattern": "cancel"
-      },
-      {
-        "intent": "check",
-        "pattern": "check"
-      }
-    ]
-  }
+  "recognizer": "tutorial.lu.qna"
 }

@@ -24,11 +24,12 @@
           "activity": "${SendActivity_1tQujq()}"
         },
         {
-          "$kind": "Microsoft.DeleteProperty",
+          "$kind": "Microsoft.SetProperty",
           "$designer": {
-            "id": "X3V5U8"
+            "id": "kLqCws"
           },
-          "property": "user.zipcode"
+          "property": "user.zipcode",
+          "value": "=@zipcode"
         },
         {
           "$kind": "Microsoft.TextInput",
