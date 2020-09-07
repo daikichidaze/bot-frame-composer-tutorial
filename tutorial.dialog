@@ -40,6 +40,13 @@
                     "name": "Send a response"
                   },
                   "activity": "${SendActivity_Welcome()}"
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "bZ1lPj"
+                  },
+                  "activity": "${SendActivity_bZ1lPj()}"
                 }
               ]
             }
